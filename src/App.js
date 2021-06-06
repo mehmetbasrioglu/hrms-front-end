@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import NavigationBar from './layouts/NavigationBar';
+import JobAdvertisementPage from './pages/JobAdvertisementPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <NavigationBar/>
+        
+      <div className="Appbg-gri min-vh-100">
+         {/* SAĞ ŞEHİRLER VS */}
+         <div className="container">
+        <JobAdvertisementPage/>
+        </div>
+      </div>
+   
     </div>
   );
 }
