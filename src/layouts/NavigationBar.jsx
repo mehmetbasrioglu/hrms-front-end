@@ -5,11 +5,12 @@ import "./CustomNavigation.css"
 import {Avatar} from "@material-ui/core"
 
 import {AiFillMessage} from "react-icons/ai"
+import { Link } from 'react-router-dom'
 
 function NavigationBar() {
     return (
         <div>
-            <nav class="navbar navbar-expand-md navbar-light bg-white nav-shadow">
+            <nav class="navbar navbar-expand-md navbar-light bg-white nav-shadow fixed-top">
   <div class="container-fluid container">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
       <ul class="navbar-nav me-auto navbar-links">
@@ -17,13 +18,13 @@ function NavigationBar() {
           <a class="nav-link logo" href="#">HRMS.NET</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link long" href="//codeply.com">İş Ara</a>
+          <Link to="/is-ilanlari" class="nav-link long" >İş Ara</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link long" href="#">Profil</a>
         </li>
         <li class="nav-item long">
-          <a class="nav-link " href="#">Özgeçmiş</a>
+          <Link to="/ozgecmis" class="nav-link ">Özgeçmiş</Link>
           <span className="yeni">Yeni</span>
         </li>
         <li class="nav-item ">

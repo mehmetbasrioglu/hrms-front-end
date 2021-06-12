@@ -5,15 +5,22 @@ import ShadowBox from "../layouts/ShadowBox";
 import "./Pages.css";
 import CityService from "../services/cityService";
 import JobTitleService from "../services/jobTitleService";
+import JobAdvertisementService from "../services/jobAdvertisementService"
 import RoundedBox from "../layouts/RoundedBox";
+
+import moment from "moment";
+import 'moment/locale/tr' 
+moment.locale('tr')
 
 function JobAdvertisementPage() {
   const [cities, setCities] = React.useState([]);
   const [titles, setTitles] = React.useState([]);
+  const [jobAds, setjobAds] = React.useState([]);
 
   React.useEffect(() => {
     let cityService = new CityService();
     let titleService = new JobTitleService()
+    let jobAdvertisementService = new JobAdvertisementService();
     cityService.getAll().then((data) => {
       setCities(data.data.data);
     });
@@ -21,13 +28,20 @@ function JobAdvertisementPage() {
         setTitles(data.data.data);
       });
 
+      jobAdvertisementService.getAll().then((data) => {
+        setjobAds(data.data.data);
+        console.log(data.data.data)
+      });
+    
+
   },[]);
 
+    
   return (
-    <div>
+    <div style={{paddingTop:100}}>
       <div className="row  margintop">
         <div className="col-2">
-          <ShadowBox>
+          <ShadowBox margined={60}>
             <div className="p-10 d-flex flex-column jobads-right">
               <span>Şehirler</span>
               <div className="custom-select">
@@ -61,7 +75,7 @@ function JobAdvertisementPage() {
             </div>
           </ShadowBox>
         </div>
-        <div className="col">
+        <div className="col" style={{paddingBottom:50}}>
            <div className="jobads-right">
          
            <div className="custom-select bg-white-cs">
@@ -74,27 +88,35 @@ function JobAdvertisementPage() {
                 <span className="custom-arrow" />
               </div>
            </div>
-          <ShadowBox height={130}>
+          {jobAds.map(data=>(
+            <ShadowBox margined={20} zoomed>
             <div className="p-10">
             <div className="d-flex jobads-right align-items-center justify-content-between">
             <div className="d-flex jobads-right align-items-center">
-            <span >SIEMENS</span>
+            <span >{data.employer.companyName}</span>
             <span className="yeni">Yeni</span>
             </div>
             <div className="d-flex jobads-right align-items-center">
-            <span >İstanbul</span>
+            <span >{data.city.cityName}</span>
             </div>
             </div>
             <div className="jobads-right align-items-center">
-            <span className="font-light">Full Stack Developer</span>
+            <span className="font-light">{data.jobtitle.title}</span>
+            </div>
+            <div className="jobads-right align-items-center">
+            <span className="font-light">{data.description}</span>
             </div>
             <div className="jobads-right mtop-10 d-flex justify-content-between align-items-center">
-            <RoundedBox title={"Tam Zamanlı"}/>
-            <span>1 gün önce</span>
+            <div className="d-flex">
+            <RoundedBox title={data.workHour.workHours}/>
+            <RoundedBox title={data.workType.workType}/>
+            </div>
+            <span>{moment(data.createdDate).locale("tr").fromNow()}</span>
             </div>
 
             </div>
           </ShadowBox>
+          ))}
         </div>
       </div>
     </div>
