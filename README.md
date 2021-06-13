@@ -7,5 +7,15 @@
 
 
 ### İş İlanlari
-![Web yakalama_12-6-2021_15428_localhost](https://user-images.githubusercontent.com/75476607/121776320-dd1a0380-cb94-11eb-9472-6d51f78e813a.jpeg)
+![image](https://user-images.githubusercontent.com/75476607/121822126-0ecebf80-cca6-11eb-8b06-a1b458ee0c5d.png)
 
+
+### Onay Bekleyen İlanlar(HRMS ADMIN)
+
+![image](https://user-images.githubusercontent.com/75476607/121822109-ee9f0080-cca5-11eb-8612-7588f5830957.png)
+
+
+![image](https://user-images.githubusercontent.com/75476607/121822076-c3b4ac80-cca5-11eb-9267-91c2207e4551.png)
+
+
+![image](https://user-images.githubusercontent.com/75476607/121822054-a1229380-cca5-11eb-9a04-7f65f08a9b41.png)
