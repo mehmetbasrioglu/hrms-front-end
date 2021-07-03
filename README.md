@@ -1,21 +1,43 @@
-### Note
-* Tasarım Çalınmasını önlemek için css kodları gizlenmiştir.
+<p align="center">
+<img src="https://img.shields.io/github/issues/mehmetbasrioglu/hrms-front-end?style=for-the-badge"/>   
+ <img src="https://img.shields.io/github/forks/mehmetbasrioglu/hrms-front-end?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/stars/mehmetbasrioglu/hrms-front-end?style=for-the-badge"/>
+   <img src="https://img.shields.io/github/license/mehmetbasrioglu/hrms-front-end?style=for-the-badge"/>
 
-### İş Veren İş İlani Oluştur
+ </p>
+ 
+ 
+  <h3 align="center"> Built With</h3>
+  
+  <p align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+ </p>
+  
+ 
+ <h3 align="center"> User Interface </h3>
+ 
+ <p align="center">
+  
+  
+  ![image](https://user-images.githubusercontent.com/75476607/124363837-772a1480-dc46-11eb-9ce9-c230480e6920.png)
 
-![Web yakalama_12-6-2021_154517_localhost](https://user-images.githubusercontent.com/75476607/121776827-a98ca880-cb97-11eb-8a5e-af58b1160e5a.jpeg)
+  
+
+  ![image](https://user-images.githubusercontent.com/75476607/124363818-51047480-dc46-11eb-8463-9bc72744342a.png)
+
+  
+  ![image](https://user-images.githubusercontent.com/75476607/124363809-33370f80-dc46-11eb-8a45-83feb5de47c0.png)
+  
+  ![image](https://user-images.githubusercontent.com/75476607/124363854-9163f280-dc46-11eb-9e4b-c42ddfcaa509.png)
 
 
-### İş İlanlari
-![image](https://user-images.githubusercontent.com/75476607/121822126-0ecebf80-cca6-11eb-8b06-a1b458ee0c5d.png)
+  
+  ![image](https://user-images.githubusercontent.com/75476607/124363943-ff101e80-dc46-11eb-8baf-0ca6bc62986d.png)
 
 
-### Onay Bekleyen İlanlar(HRMS ADMIN)
-
-![image](https://user-images.githubusercontent.com/75476607/121822109-ee9f0080-cca5-11eb-8612-7588f5830957.png)
-
-
-![image](https://user-images.githubusercontent.com/75476607/121822076-c3b4ac80-cca5-11eb-9267-91c2207e4551.png)
-
-
-![image](https://user-images.githubusercontent.com/75476607/121822054-a1229380-cca5-11eb-9a04-7f65f08a9b41.png)
+ </p>
+ 
