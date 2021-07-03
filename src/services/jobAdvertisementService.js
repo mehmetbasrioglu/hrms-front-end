@@ -39,4 +39,17 @@ export default class JobAdvertisementService{
         return axios.post("http://localhost:8080/api/jobAdvertisements/confirmJobAdById?id="+id)
     }
 
+    getConfirmedJobsAndActiveted(employerId){
+        return axios.get("http://localhost:8080/api/jobAdvertisements/getByEmployerIdAndActiveAndConfirmed?employerId="+employerId)
+    }
+
+    ///api/jobAdvertisements/getConfirmedJobAdsWithPageable?pageNo=1&pageSize=5
+    getConfirmedJobAdsWithPageable(pageNo,pageSize){
+        return axios.get(`http://localhost:8080/api/jobAdvertisements/getConfirmedJobAdsWithPageable?pageNo=${pageNo}&pageSize=${pageSize}`)
+    }
+
+    getFilter(object,pageNo,pageSize){
+        return axios.post(`http://localhost:8080/api/jobAdvertisements/getFilter?pageNumber=${pageNo}&pageSize=${pageSize}`,object)
+    }
+
 }

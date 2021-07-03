@@ -146,7 +146,7 @@ function JobAdsWaitingDetailPage() {
                <div className="col-1">
                <div className="d-flex flex-column" style={{marginLeft:40}}>
                 <MiniRoundedBox
-                className="d-flex justify-content-center align-items-center bg-color1 transformed pointer"
+                className="d-flex justify-content-center align-items-center bg-color1  pointer"
                 width={45}
                 height={45}
                 >
@@ -155,7 +155,7 @@ function JobAdsWaitingDetailPage() {
                   </span>
                 </MiniRoundedBox>
                 <MiniRoundedBox
-                className="d-flex justify-content-center align-items-center bg-color2 transformed2 pointer"
+                className="d-flex justify-content-center align-items-center bg-color2  pointer"
                 width={45}
                 height={45}
                 margined={10}

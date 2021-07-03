@@ -6,6 +6,7 @@ import {Avatar} from "@material-ui/core"
 
 import {AiFillMessage} from "react-icons/ai"
 import { Link } from 'react-router-dom'
+import { MdMail } from 'react-icons/md'
 
 function NavigationBar() {
     return (
@@ -14,8 +15,8 @@ function NavigationBar() {
   <div class="container-fluid container">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
       <ul class="navbar-nav me-auto navbar-links">
-        <li class="nav-item active">
-          <a class="nav-link logo" href="#">HRMS.NET</a>
+        <li class="nav-item  d-flex ">
+          <a class="nav-link logo long" href="#">hrms.net</a>
         </li>
         <li class="nav-item">
           <Link to="/is-ilanlari" class="nav-link long" >İş Ara</Link>
@@ -23,9 +24,9 @@ function NavigationBar() {
         <li class="nav-item">
           <a class="nav-link long" href="#">Profil</a>
         </li>
-        <li class="nav-item long">
-          <Link to="/ozgecmis" class="nav-link ">Özgeçmiş</Link>
-          <span className="yeni">Yeni</span>
+        <li class="nav-item spanyeni">
+          <Link to="/ozgecmis" class="nav-link long">Özgeçmiş</Link>
+          <span className="yeni"></span>
         </li>
         <li class="nav-item ">
           <a class="nav-link long" href="#">Kariyer Rehberi</a>
@@ -35,7 +36,7 @@ function NavigationBar() {
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ms-auto d-flex align-items-center">
           <li className="nav-item">
-              <AiFillMessage size={20} color={"#979797"}/>
+              <MdMail size={20} color={"var(--turuncu)"}/>
               </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Mehmet Basrioğlu</a>

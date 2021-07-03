@@ -6,6 +6,10 @@ import { Route } from 'react-router-dom';
 import CreateJobAdvertisementPage from './pages/CreateJobAdvertisementPage';
 import JobAdsWaitingPage from './pages/JobAdsWaitingPage';
 import JobAdsWaitingDetailPage from './pages/JobAdsWaitingDetailPage';
+import CandidateCVPage from './pages/CandidateCVPage';
+import EmployerProfilePage from './pages/EmployerProfilePage';
+import EmployerProfileSettingsPage from './pages/EmployerProfileSettingsPage';
+import ThirdPersonEmployerPage from './pages/ThirdPersonEmployerPage';
 
 function App() {
   return (
@@ -43,6 +47,44 @@ function App() {
          {/* SAĞ ŞEHİRLER VS */}
          <div className="container" >
          <JobAdsWaitingDetailPage/>
+        </div>
+      </div>
+      </Route>
+
+      <Route path="/profile/cv/:id" exact>
+      <div className="Appbg-gri min-vh-100">
+         {/* SAĞ ŞEHİRLER VS */}
+         <div className="" >
+         <CandidateCVPage/>
+        </div>
+      </div>
+      </Route>
+      
+
+      <Route path="/employer/profile" exact>
+      <div className="Appbg-gri min-vh-100">
+         {/* SAĞ ŞEHİRLER VS */}
+         <div className="" >
+         <EmployerProfilePage/>
+        </div>
+      </div>
+      </Route>
+      
+      <Route path="/employer/profile/view/:id" exact>
+      <div className="Appbg-gri min-vh-100">
+         {/* SAĞ ŞEHİRLER VS */}
+         <div className="" >
+         <ThirdPersonEmployerPage/>
+        </div>
+      </div>
+      </Route>
+
+
+      <Route path="/employer/profile/settings" exact>
+      <div className="Appbg-gri min-vh-100">
+         {/* SAĞ ŞEHİRLER VS */}
+         <div className="" style={{paddingTop:100}}>
+         <EmployerProfileSettingsPage/>
         </div>
       </div>
       </Route>
